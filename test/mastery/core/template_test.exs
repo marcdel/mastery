@@ -1,5 +1,5 @@
-defmodule TemplateTest do
-  use ExUnit.Case
+defmodule Mastery.Core.TemplateTest do
+  use ExUnit.Case, async: true
   use QuizBuilders
 
   test "creating a template compiles the raw value its given" do

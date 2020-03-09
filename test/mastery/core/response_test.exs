@@ -1,5 +1,5 @@
-defmodule ResponseTest do
-  use ExUnit.Case
+defmodule Mastery.Core.ResponseTest do
+  use ExUnit.Case, async: true
   use QuizBuilders
 
   defp quiz() do

@@ -1,5 +1,5 @@
-defmodule QuestionTest do
-  use ExUnit.Case
+defmodule Mastery.Core.QuestionTest do
+  use ExUnit.Case, async: true
   use QuizBuilders
 
   test "building chooses substitutions" do
