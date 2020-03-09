@@ -1,0 +1,12 @@
+digraph "xref graph" {
+  "lib/mastery.ex"
+  "lib/mastery/application.ex"
+  "lib/mastery/core/question.ex"
+  "lib/mastery/core/question.ex" -> "lib/mastery/core/template.ex" [label="(struct)"]
+  "lib/mastery/core/quiz.ex"
+  "lib/mastery/core/quiz.ex" -> "lib/mastery/core/question.ex"
+  "lib/mastery/core/quiz.ex" -> "lib/mastery/core/response.ex" [label="(struct)"]
+  "lib/mastery/core/quiz.ex" -> "lib/mastery/core/template.ex"
+  "lib/mastery/core/response.ex"
+  "lib/mastery/core/template.ex"
+}
