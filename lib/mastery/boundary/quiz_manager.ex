@@ -2,6 +2,10 @@ defmodule Mastery.Boundary.QuizManager do
   alias Mastery.Core.Quiz
   use GenServer
 
+  def start do
+    GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  end
+
   def init(quizzes) when is_map(quizzes) do
     {:ok, quizzes}
   end
