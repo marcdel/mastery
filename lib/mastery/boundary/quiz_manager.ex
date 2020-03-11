@@ -2,7 +2,7 @@ defmodule Mastery.Boundary.QuizManager do
   alias Mastery.Core.Quiz
   use GenServer
 
-  def start do
+  def start_link do
     GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
   end
 

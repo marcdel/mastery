@@ -2,7 +2,7 @@ defmodule Mastery.Boundary.QuizSession do
   alias Mastery.Core.{Quiz, Response}
   use GenServer
 
-  def start({quiz, email}) do
+  def start_link({quiz, email}) do
     GenServer.start_link(__MODULE__, {quiz, email})
   end
 
