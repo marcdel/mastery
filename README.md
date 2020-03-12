@@ -9,7 +9,6 @@ Generate new dependency graph with `./generate_dep_graph.sh`
 Simple math example:
 
 ```elixir
-Mastery.start_quiz_manager
 Mastery.build_quiz(Math.quiz_fields)
 Mastery.add_template(Math.quiz.title, Math.template_fields)
 
