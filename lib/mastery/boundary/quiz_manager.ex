@@ -2,8 +2,8 @@ defmodule Mastery.Boundary.QuizManager do
   alias Mastery.Core.Quiz
   use GenServer
 
-  def start_link do
-    GenServer.start_link(__MODULE__, %{}, name: __MODULE__)
+  def start_link(options \\ []) do
+    GenServer.start_link(__MODULE__, %{}, Keyword.merge([name: __MODULE__], options))
   end
 
   def init(quizzes) when is_map(quizzes) do
