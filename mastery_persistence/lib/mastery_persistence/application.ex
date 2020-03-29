@@ -7,7 +7,7 @@ defmodule MasteryPersistence.Application do
 
   def start(_type, _args) do
     children = [
-       MasteryPersistence.Repo
+      MasteryPersistence.Repo
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
