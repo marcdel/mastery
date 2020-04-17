@@ -12,8 +12,8 @@ defmodule MasteryPersistence do
           email: response.email,
           answer: response.answer,
           correct: response.correct,
-          inserted_at: response.inserted_at,
-          updated_at: response.updated_at
+          inserted_at: response.timestamp,
+          updated_at: response.timestamp
         }
         |> Response.record_changeset()
         |> Repo.insert!()
